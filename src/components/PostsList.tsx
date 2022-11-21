@@ -1,10 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
 import { trpc } from "../utils/trpc";
 
 
 export default function PostsList() {
-    const posts = trpc.get.allPosts.useQuery();
+    const [isHome, setIsHome] = useState(2)
+    const router = useRouter();
+
+    useEffect(() => {
+        if (router.pathname !== '/') {
+            setIsHome(20)
+        }
+    }, [])
+
+    const posts = trpc.get.newestPosts.useQuery(isHome);
 
     if (posts === null) {
         return (

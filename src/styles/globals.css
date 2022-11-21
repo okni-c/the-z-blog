@@ -5,7 +5,7 @@
 @layer base {
 
   body {
-    @apply pattern-dots dark:pattern-cyan-600 pattern-yellow-600 dark:pattern-bg-neutral-700 pattern-bg-neutral-200 pattern-size-2 md:pattern-size-2 pattern-opacity-20 dark:opacity-100 opacity-100 max-w-7xl mx-auto;
+    @apply pattern-dots dark:pattern-cyan-600 pattern-red-500 dark:pattern-bg-neutral-700 pattern-bg-neutral-200 pattern-size-2 md:pattern-size-2 pattern-opacity-20 dark:opacity-100 opacity-100 max-w-7xl mx-auto;
   }
 
   h1, h2, h3, h4, h5, p, li {
@@ -49,11 +49,11 @@
   }
 
   .author-pill {
-    @apply dark:bg-cyan-800 bg-yellow-200 rounded-lg px-3 py-1 my-2 font-bold drop-shadow-lg whitespace-nowrap w-full flex items-center justify-center;
+    @apply dark:bg-cyan-800 bg-yellow-400 rounded-lg px-3 py-1 my-2 font-bold drop-shadow-lg whitespace-nowrap w-full flex items-center justify-center;
   }
 
   .date-pill {
-    @apply dark:bg-red-600 bg-red-400 rounded-lg px-3 py-1 my-2 font-bold drop-shadow-lg whitespace-nowrap w-full flex items-center justify-center;
+    @apply dark:bg-red-600 bg-red-500 rounded-lg px-3 py-1 my-2 font-bold drop-shadow-lg whitespace-nowrap w-full flex items-center justify-center;
   }
 
   input#new-post:checked + label {
