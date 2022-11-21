@@ -1,3 +1,79 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+
+  body {
+    @apply pattern-dots dark:pattern-cyan-600 pattern-yellow-600 dark:pattern-bg-neutral-700 pattern-bg-neutral-200 pattern-size-2 md:pattern-size-2 pattern-opacity-20 dark:opacity-100 opacity-100 max-w-7xl mx-auto;
+  }
+
+  h1, h2, h3, h4, h5, p, li {
+    @apply dark:text-white;
+  }
+
+  h1 {
+    @apply text-3xl md:text-5xl tracking-tight font-black my-2 md:my-5;
+  }
+
+  h2 {
+    @apply text-2xl md:text-4xl font-black my-2 md:my-5;
+  }
+
+  h3 {
+    @apply text-xl md:text-3xl font-bold my-2 md:my-5;
+  }
+
+  h4 {
+    @apply text-lg md:text-2xl font-semibold my-2 md:my-5;
+  }
+
+  h5 {
+    @apply text-lg md:text-xl font-medium my-2 md:my-5;
+  }
+
+  p {
+    @apply text-base my-3 md:my-5 md:text-lg;
+  }
+
+  li {
+    @apply text-base md:text-lg font-semibold;
+  }
+
+  main {
+    @apply my-5 mx-2 py-2 px-6 pb-6 dark:bg-neutral-800 bg-neutral-200 dark:bg-opacity-80 bg-opacity-80 rounded-xl drop-shadow-xl;
+  }
+
+  a {
+    @apply hover:underline
+  }
+
+  .author-pill {
+    @apply dark:bg-cyan-800 bg-yellow-200 rounded-lg px-3 py-1 my-2 font-bold drop-shadow-lg whitespace-nowrap w-full flex items-center justify-center;
+  }
+
+  .date-pill {
+    @apply dark:bg-red-600 bg-red-400 rounded-lg px-3 py-1 my-2 font-bold drop-shadow-lg whitespace-nowrap w-full flex items-center justify-center;
+  }
+
+  input#new-post:checked + label {
+    @apply bg-green-600;
+  }
+
+  input[type="radio"]:checked + label {
+    @apply dark:bg-cyan-700 bg-yellow-500;
+  }
+
+  .blog-list {
+    @apply list-disc ml-10 font-normal my-0;
+  }
+
+  .blog-list > p {
+    @apply my-0;
+  }
+
+  input:checked ~ .dot {
+    transform: translateX(100%);
+    @apply bg-cyan-700;
+  }
+}
