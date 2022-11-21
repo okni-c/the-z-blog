@@ -15,11 +15,11 @@ export const getRouter = router({
     return ctx.prisma.post.findMany();
   }),
   postBySlug: publicProcedure
-  .input(z.object({ postSlug: z.string() }).nullish())
+  .input(z.string())
   .query(({ ctx, input }) => {
     return ctx.prisma.post.findUnique({
       where: {
-        slug: input?.postSlug,
+        slug: input,
       }
     });
   }),

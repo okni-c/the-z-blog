@@ -11,7 +11,8 @@ import Head from "next/head";
 const PostPage: NextPage = () => {
     const router = useRouter();
     const { slug } = router.query;
-    const post = trpc.get.postBySlug.useQuery({ postSlug: slug });
+    const string : any = slug;
+    const post = trpc.get.postBySlug.useQuery(string);
     if (post.data === undefined) {
         return (
             <>
@@ -39,7 +40,7 @@ const PostPage: NextPage = () => {
                 <hr className="bg-neutral-700 h-2 rounded-full border-none" />
                 <section className="max-w-[1000px] w-full my-6 mx-auto">
                     <Image src={post.data?.thumbnail || ''} width={1000} height={500} className="rounded-xl mx-auto aspect-video object-cover drop-shadow-lg hover:xl:scale-105 hover:xl:my-4 ease-in-out duration-150" alt="Evan leaning over the engine bay, adjusting the new battery terminal." priority />
-                    <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(post.data.body)}} />
+                    <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(post.data?.body || '<p>No data</p>')}} />
                 </section>
             </main>
         </>
