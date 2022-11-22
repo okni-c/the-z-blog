@@ -7,6 +7,7 @@ import { useRouter } from 'next/router'
 import DOMPurify from 'isomorphic-dompurify';
 import { trpc } from "../../utils/trpc";
 import Head from "next/head";
+import Footer from "../../components/Footer";
 
 const PostPage: NextPage = () => {
     const router = useRouter();
@@ -43,6 +44,7 @@ const PostPage: NextPage = () => {
                     <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(post.data?.body || '<p>No data</p>')}} />
                 </section>
             </main>
+            <Footer />
         </>
     )
 }

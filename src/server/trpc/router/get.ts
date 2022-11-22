@@ -7,11 +7,9 @@ export const getRouter = router({
   allPosts: publicProcedure.query(({ ctx }) => {
     return ctx.prisma.post.findMany();
   }),
-  newestPosts: publicProcedure
-  .input(z.number())
-  .query(({ ctx, input }) => {
+  newestPosts: publicProcedure.query(({ ctx }) => {
     return ctx.prisma.post.findMany({
-      take: input,
+      take: 3,
     });
   }),
   postBySlug: publicProcedure

@@ -8,6 +8,10 @@
     @apply pattern-dots dark:pattern-cyan-600 pattern-red-500 dark:pattern-bg-neutral-700 pattern-bg-neutral-200 pattern-size-2 md:pattern-size-2 pattern-opacity-20 dark:opacity-100 opacity-100 max-w-7xl mx-auto;
   }
 
+  div#__next {
+    @apply flex flex-col h-screen mb-5;
+  }
+
   h1, h2, h3, h4, h5, p, li {
     @apply dark:text-white;
   }
@@ -41,7 +45,7 @@
   }
 
   main {
-    @apply my-5 mx-2 py-2 px-6 pb-6 dark:bg-neutral-800 bg-neutral-200 dark:bg-opacity-80 bg-opacity-80 rounded-xl drop-shadow-xl;
+    @apply my-2 md:my-5 mx-2 py-2 px-6 pb-6 dark:bg-neutral-800 bg-neutral-200 dark:bg-opacity-80 bg-opacity-80 rounded-xl drop-shadow-xl flex-grow;
   }
 
   a {

@@ -44,7 +44,7 @@ export default function Nav() {
     return (
         <div className="bg-yellow-400 dark:bg-cyan-800 rounded-xl m-2 drop-shadow-xl">
             <nav className="flex justify-between mx-5 py-2 md:py-4 items-center">
-                <p className="text-xl font-black my-0 md:text-2xl tracking-tight"><Link href={"/"} legacyBehavior><a className="flex flex-col md:flex-row sm:gap-2 capitalize"><Image src="/logo.jpg" width={100} height={10} className="w-10 drop-shadow-md md:w-24" alt="icon of a nissan 300zx from 1986." priority />z-chronicles</a></Link></p>
+                <p className="text-xl font-black my-0 md:text-2xl tracking-tight"><Link href={"/"} legacyBehavior><a className="flex flex-col md:flex-row sm:gap-2"><Image src="/logo.jpg" width={100} height={10} className="w-10 drop-shadow-md md:w-24" alt="icon of a nissan 300zx from 1986." priority />the z-chronicles</a></Link></p>
                 <ul className="flex gap-5">
                     {isHome ?
                         <></>

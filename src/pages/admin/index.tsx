@@ -30,6 +30,7 @@ import { format } from 'date-fns'
 import { trpc } from '../../utils/trpc';
 import Nav from '../../components/Nav'
 import { useSession, signIn, signOut } from "next-auth/react"
+import Footer from '../../components/Footer'
 
 
 const Admin: NextPage = () => {
@@ -279,7 +280,7 @@ const Admin: NextPage = () => {
                     <form onSubmit={handleSumbit} className='w-full'>
                         <div className='dark:border-cyan-700 border-yellow-500 border-2 rounded-xl my-2'>
                             <label htmlFor='title' className='flex flex-col'><h3 className='mx-4 my-3 mb-0'>Title</h3>
-                                <input type='text' id='title' name='title' className='bg-transparent dark:border-cyan-700 border-yellow-500 border-2 rounded-md m-4 p-2 dark:text-white text-black' placeholder='The best blog yet...' value={formState.title} onChange={handleChange} required />
+                                <input type='text' id='title' name='title' className='bg-transparent dark:border-cyan-700 border-yellow-500 border-2 rounded-md m-4 p-2 dark:text-white text-black' placeholder='The best blog yet...' maxLength={45} value={formState.title} onChange={handleChange} required />
                             </label>
                             <label htmlFor='thumbnail' className='flex flex-col'><h3 className='mx-4 my-3 mb-0'>Thumbnail Filename</h3>
                                 <input type='text' id='thumbnail' name='thumbnail' className='bg-transparent dark:border-cyan-700 border-yellow-500 border-2 rounded-md m-4 p-2 dark:text-white text-black' placeholder='1.jpg' value={formState.thumbnail} onChange={handleChange} required />
@@ -356,6 +357,7 @@ const Admin: NextPage = () => {
             </main>
             <Toast ref={toast} />
             <Toast ref={toastBC} />
+            <Footer />
         </>
     )
 }
