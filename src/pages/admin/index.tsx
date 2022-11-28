@@ -105,7 +105,7 @@ const Admin: NextPage = () => {
             }),
             HorizontalRule.configure({
                 HTMLAttributes: {
-                    class: 'bg-neutral-700 h-1 rounded-full border-none',
+                    class: 'bg-neutral-700 h-1 rounded-full border-none my-4',
                 },
             }),
             Heading.configure({
@@ -235,7 +235,7 @@ const Admin: NextPage = () => {
         return (
             <>
                 <Head>
-                    <title>The Z-Blog | Admin Login</title>
+                    <title>Z-Chronicles | Admin Login</title>
                     <meta name="description" content="Latests posts of the 1986 Nissan 300zx joureny!" />
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
@@ -253,14 +253,14 @@ const Admin: NextPage = () => {
     return (
         <>
             <Head>
-                <title>The Z-Blog | Admin Panel</title>
+                <title>Z-Chronicles | Admin Panel</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Nav />
             <main>
                 <div className='flex justify-between items-center'>
                     <h1>Admin Panel</h1>
-                    <button className="border border-red-500 rounded-lg dark:text-white text-black font-semibold ml-auto hover:bg-red-500 py-2 px-4 mt-4 flex items-center" onClick={() => signOut({ callbackUrl: '/' })}><FaSignOutAlt className='mr-2'/> Sign Out</button>
+                    <button className="border border-red-500 rounded-lg dark:text-white text-black font-semibold ml-auto hover:bg-red-500 py-2 px-4 mt-4 flex items-center" onClick={() => signOut({ callbackUrl: '/' })}><FaSignOutAlt className='mr-2' /> Sign Out</button>
                 </div>
                 <div className="flex items-start">
                     {/* Left Post data */}

@@ -9,7 +9,7 @@
   }
 
   div#__next {
-    @apply flex flex-col h-screen mb-5;
+    @apply flex flex-col h-screen;
   }
 
   h1, h2, h3, h4, h5, p, li {
@@ -21,7 +21,7 @@
   }
 
   h2 {
-    @apply text-2xl md:text-4xl font-black my-2 md:my-5;
+    @apply text-2xl md:text-4xl font-extrabold my-2 md:my-5;
   }
 
   h3 {
@@ -45,7 +45,7 @@
   }
 
   main {
-    @apply my-2 md:my-5 mx-2 py-2 px-6 pb-6 dark:bg-neutral-800 bg-neutral-200 dark:bg-opacity-80 bg-opacity-80 rounded-xl drop-shadow-xl flex-grow;
+    @apply my-2 md:my-3 mx-2 py-2 px-6 pb-6 dark:bg-neutral-800 bg-neutral-200 dark:bg-opacity-80 bg-opacity-75 rounded-xl drop-shadow-xl flex-grow;
   }
 
   a {
@@ -57,7 +57,7 @@
   }
 
   .date-pill {
-    @apply dark:bg-red-600 bg-red-500 rounded-lg px-3 py-1 my-2 font-bold drop-shadow-lg whitespace-nowrap w-full flex items-center justify-center;
+    @apply dark:bg-red-600 bg-red-500 rounded-lg px-3 py-1 my-0 font-bold drop-shadow-lg whitespace-nowrap w-full flex items-center justify-center;
   }
 
   input#new-post:checked + label {
