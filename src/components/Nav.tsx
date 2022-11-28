@@ -63,7 +63,7 @@ export default function Nav() {
                             <label htmlFor="toggleB" className="flex items-center cursor-pointer">
                                 <div className="relative">
                                     <input type="checkbox" id="toggleB" className="sr-only" onChange={(event) => setIsChecked(event.currentTarget.checked)}
-                                        checked={isChecked || false} />
+                                        checked={isChecked || true} />
                                     <div className="block dark:bg-neutral-800 bg-neutral-100 dark:bg-opacity-80 bg-opacity-80 drop-shadow-xl w-14 h-8 rounded-full"></div>
                                     <div className="dot absolute left-1 top-1 w-6 h-6 rounded-full transition flex items-center justify-center bg-yellow-400">{isChecked ? <FaRegMoon /> : <FaRegSun />}</div>
                                 </div>

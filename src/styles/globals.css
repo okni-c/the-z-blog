@@ -77,7 +77,6 @@
   }
 
   input:checked ~ .dot {
-    transform: translateX(100%);
-    @apply bg-cyan-700;
+    @apply md:translate-x-full bg-cyan-700;
   }
 }
