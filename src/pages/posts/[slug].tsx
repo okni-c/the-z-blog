@@ -40,7 +40,7 @@ const PostPage: NextPage = () => {
                 </header>
                 <hr className="bg-neutral-700 h-2 rounded-full border-none my-6" />
                 <section className="max-w-[1000px] w-full mx-auto">
-                    <Image src={post.data?.thumbnail || ''} width={1000} height={500} className="rounded-xl mx-auto aspect-video object-cover drop-shadow-lg hover:xl:scale-105 hover:xl:my-4 ease-in-out duration-150" alt="Blog article thumbnail" priority />
+                    <img src={post.data?.thumbnail} width={1000} height={500} className="rounded-xl mx-auto aspect-video object-cover drop-shadow-lg hover:xl:scale-105 hover:xl:my-4 ease-in-out duration-150" alt="Blog article thumbnail" />
                     <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(post.data?.body || '<p>No data</p>')}} />
                 </section>
             </main>

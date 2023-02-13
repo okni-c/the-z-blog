@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       <Nav />
       <main className="flex flex-col justify-start">
         <div className="my-8 md:my-14 text-center">
-          <Image src="/logo.jpg" width={150} height={500} className="mx-auto aspect-video object-contain m-0 p-0 md:motion-safe:animate-bounce ease-in-out" alt='red car icon' priority />
+          <Image src="/logo.jpg" width={150} height={500} className="mx-auto aspect-video object-contain m-0 p-0" alt='red car icon' priority />
           <h1 className="text-4xl md:text-6xl drop-shadow-lg">
             the z-<span className="dark:text-red-600 text-red-500">chronicles</span>
           </h1>

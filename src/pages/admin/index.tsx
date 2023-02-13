@@ -53,7 +53,7 @@ const Admin: NextPage = () => {
                 title: '',
                 Date: '',
                 author: 'Dallas Yatsinko',
-                thumbnail: 'https://d31h1hbu3vb07v.cloudfront.net/',
+                thumbnail: '/blog-imgs/',
                 body: '',
                 id: '6379e61238b41a17eb9c7ef7'
             })
@@ -124,7 +124,7 @@ const Admin: NextPage = () => {
         setFormState({
             title: postData.title,
             author: postData.author,
-            thumbnail: postData.thumbnail || 'https://d31h1hbu3vb07v.cloudfront.net/',
+            thumbnail: postData.thumbnail || '/blog-imgs/',
             id: postData.id,
         })
         if (editor && !editor.isDestroyed) {
@@ -133,7 +133,7 @@ const Admin: NextPage = () => {
     }, [postData, editor])
 
     const addImage = useCallback(() => {
-        const url = window.prompt('Add the filename after the given URL:', 'https://d31h1hbu3vb07v.cloudfront.net/')
+        const url = window.prompt('Add the filename after the given URL:', '/blog-imgs/')
 
         if (url) {
             editor.chain().focus().setImage({ src: url }).run()
@@ -219,7 +219,7 @@ const Admin: NextPage = () => {
             setFormState({
                 title: '',
                 author: 'Dallas Yatsinko',
-                thumbnail: 'https://d31h1hbu3vb07v.cloudfront.net/',
+                thumbnail: '/blog-imgs/',
                 id: '6379e61238b41a17eb9c7ef7'
             })
             editor.chain().focus().setContent(`<p>New post, let's go!</p>`).run();
@@ -347,7 +347,7 @@ const Admin: NextPage = () => {
                                 <button type='button' onClick={addYoutubeVideo} className="border dark:border-cyan-700 border-yellow-500 rounded-lg px-2 dark:text-white text-black font-semibold mx-1 dark:hover:bg-cyan-700 hover:bg-yellow-400 hover:opacity-70 py-2">
                                     <BsYoutube />
                                 </button>
-                                <button type="submit" className="flex items-center ml-auto border dark:border-cyan-700 border-yellow-500 rounded-lg px-2 dark:text-white text-black font-semibold mx-1 dark:hover:bg-cyan-700 hover:bg-yellow-400 py-2"><BiMailSend className='mr-2' /> Submit Article</button>
+                                <button type="submit" className="flex items-center ml-auto border dark:border-green-600 border-yellow-500 rounded-lg px-2 dark:text-white text-black font-semibold mx-1 dark:hover:bg-green-600 hover:border-green-400 hover:bg-yellow-400 py-2"><BiMailSend className='mr-2' /> Submit Article</button>
                             </div>
                             <EditorContent editor={editor} />
                         </section>
