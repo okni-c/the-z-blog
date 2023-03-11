@@ -25,7 +25,7 @@ const Home: NextPage = () => {
           <p className="text-lg md:text-xl font-semibold">follow the journey of my 1986 Nissan 300zx</p>
           <div className="flex flex-row justify-center gap-10 mt-10">
             <Link href={'/posts'} legacyBehavior><a className="dark:text-white bg-yellow-400 dark:bg-cyan-700 py-3 px-6 rounded-full font-black text-md md:text-lg hover:no-underline md:hover:scale-110 ease-in-out duration-150 dark:hover:bg-cyan-800 hover:bg-yellow-500 w-32 whitespace-nowrap">All Posts</a></Link>
-            <Link href={'/posts'} legacyBehavior><a className="dark:text-white bg-yellow-400 dark:bg-cyan-700 py-3 px-6 rounded-full font-black text-md md:text-lg hover:no-underline md:hover:scale-110 ease-in-out duration-150 dark:hover:bg-cyan-800 hover:bg-yellow-500 w-32 whitespace-nowrap">About</a></Link>
+            <Link href={'/about'} legacyBehavior><a className="dark:text-white bg-yellow-400 dark:bg-cyan-700 py-3 px-6 rounded-full font-black text-md md:text-lg hover:no-underline md:hover:scale-110 ease-in-out duration-150 dark:hover:bg-cyan-800 hover:bg-yellow-500 w-32 whitespace-nowrap">About</a></Link>
           </div>
         </div>
         <div className="my-8 md:my-14 flex flex-col justify-center">

@@ -9,7 +9,7 @@ export default function Footer() {
                 <p className="text-xl font-black my-0 md:text-2xl tracking-tight"></p>
                 <Image src="/logo.jpg" width={100} height={100} className="w-12 drop-shadow-md md:w-24 h-auto" alt="icon of a nissan 300zx from 1986." priority />
                 <ul className="flex gap-5 ml-auto">
-                    <li className="font-medium flex items-center"><Link href={"https://github.com/okni-c"} legacyBehavior><a>GitHub</a></Link></li>
+                    <li className="font-medium flex items-center"><Link href={"https://github.com/okni-c/the-z-blog"} legacyBehavior><a>GitHub</a></Link></li>
                 </ul>
             </nav>
         </footer>
