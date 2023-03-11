@@ -1,6 +1,5 @@
 import { type NextPage } from "next";
 import Nav from "../../components/Nav"
-import Image from "next/image"
 import { BsFillPersonFill } from 'react-icons/bs'
 import { FaCalendarAlt } from 'react-icons/fa'
 import { useRouter } from 'next/router'

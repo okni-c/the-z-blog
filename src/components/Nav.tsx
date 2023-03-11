@@ -27,7 +27,7 @@ export default function Nav() {
             setIsHome(false)
             return
         }
-    }, [])
+    }, [router.pathname])
 
     useEffect(() => {
         const root = document.getElementsByTagName('html')[0];

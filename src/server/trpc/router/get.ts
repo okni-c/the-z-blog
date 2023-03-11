@@ -1,4 +1,3 @@
-import { inputRegex } from "@tiptap/extension-image";
 import { z } from "zod";
 
 import { router, publicProcedure } from "../trpc";
