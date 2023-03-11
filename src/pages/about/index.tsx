@@ -28,22 +28,22 @@ const Home: NextPage = () => {
 
           <img src="/about-imgs/IMG_5764.png" className="rounded-xl mx-auto aspect-video object-cover drop-shadow-lg w-full my-8" />
 
-          <p>Over time, I've poured my heart and soul into this car, fixing it up piece by piece, until it's almost as good as new. It hasn't been an easy journey, mind you. I've had to get creative with some of the repairs, like using duct tape and prayer to hold things together. But every time I get behind the wheel and hear the engine roar to life, it makes it all worth it.</p>
+          <p>Over time, I&#39;ve poured my heart and soul into this car, fixing it up piece by piece, until it&#39;s almost as good as new. It hasn&#39;t been an easy journey, mind you. I&#39;ve had to get creative with some of the repairs, like using duct tape and prayer to hold things together. But every time I get behind the wheel and hear the engine roar to life, it makes it all worth it.</p>
 
-          <p>Now, my ultimate goal is to take this car on the road trip of a lifetime. I want to hit the open road, with the wind in my hair and the sun on my face, and see where this car takes me. I want to make memories that will last a lifetime, and prove that even an old car can still have plenty of life left in it. So join me on this adventure, as I embark on a journey to restore a car that's older than most people's first cell phone, and show the world that sometimes, the best things in life are the ones that require a little extra love and attention.</p>
+          <p>Now, my ultimate goal is to take this car on the road trip of a lifetime. I want to hit the open road, with the wind in my hair and the sun on my face, and see where this car takes me. I want to make memories that will last a lifetime, and prove that even an old car can still have plenty of life left in it. So join me on this adventure, as I embark on a journey to restore a car that&#39;s older than most people&#39;s first cell phone, and show the world that sometimes, the best things in life are the ones that require a little extra love and attention.</p>
         </div>
         <div className="my-8 md:my-14 max-w-[1000px] w-full mx-auto">
           <h3>The Owner</h3>
 
-          <p><span className="font-semibold">Hey there,</span> welcome to my blog! As someone who is passionate about cars, music, and technology, I'm excited to share my experiences with you. Over the years, I've owned and modded more than 15 different cars, each with its unique story and challenges. While I've always been a fan of the Mazda Miata, I decided to take on a new challenge and restore a 1986 Nissan 300ZX.</p>
+          <p><span className="font-semibold">Hey there,</span> welcome to my blog! As someone who is passionate about cars, music, and technology, I&#39;m excited to share my experiences with you. Over the years, I&#39;ve owned and modded more than 15 different cars, each with its unique story and challenges. While I&#39;ve always been a fan of the Mazda Miata, I decided to take on a new challenge and restore a 1986 Nissan 300ZX.</p>
 
           <img src="/about-imgs/IMG_6330.jpg" className="rounded-xl mx-auto aspect-video object-cover drop-shadow-lg w-full my-8" />
 
-          <p>When I'm not in the garage, I'm either making music or working on web development. I'm an self proclaimed audio engineer who uses Ableton to create new sounds and beats that move people. Music and cars share a common ground of creativity, patience, and attention to detail, which is why I enjoy both equally.</p>
+          <p>When I&#39;m not in the garage, I&#39;m either making music or working on web development. I&#39;m an self proclaimed audio engineer who uses Ableton to create new sounds and beats that move people. Music and cars share a common ground of creativity, patience, and attention to detail, which is why I enjoy both equally.</p>
 
           <p>As a front-end developer, I enjoy creating websites that provide great user experiences. From intuitive designs to seamless navigation, my goal is to create a web environment that users will enjoy.</p>
 
-          <p>Overall, I'm just a regular guy with a passion for cars, music, and technology. I'm confident in my abilities and excited to share my knowledge and experiences with you. So, join me on this journey as we explore the world of cars, music, and technology together!</p>
+          <p>Overall, I&#39;m just a regular guy with a passion for cars, music, and technology. I&#39;m confident in my abilities and excited to share my knowledge and experiences with you. So, join me on this journey as we explore the world of cars, music, and technology together!</p>
 
         </div>
         <div className="my-8 md:my-14 flex flex-col justify-center">
