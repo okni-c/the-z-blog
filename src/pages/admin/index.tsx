@@ -91,7 +91,7 @@ const Admin: NextPage = () => {
             Bold,
             Image.configure({
                 HTMLAttributes: {
-                    class: "rounded-xl mx-auto aspect-video object-cover drop-shadow-lg w-full"
+                    class: "rounded-xl mx-auto aspect-auto object-cover drop-shadow-lg w-full"
                 }
             }),
             Italic,
